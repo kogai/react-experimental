@@ -15,13 +15,13 @@ import { Home, Movie } from './pages';
 import { Spinner } from './components/Spinner';
 import { Header } from './components/Header';
 import { Footer } from './components/Footer';
-import { add } from '../../mylib/sample';
+import { add } from '@myscope/mylib/sample';
 
 export default function App() {
   // TODO: Add Error boundaries in location of Suspense boundaries
   // TODO: The <Header /> needs to still show when the Movie Page is loading,
   //       so move <Suspense to only cover that route
-  console.log(add(1,2));
+  console.log(add(1, 2));
 
   return (
     <Suspense fallback={<Spinner />}>
